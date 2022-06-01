@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>盒子模型</title>
+<meta charset="utf-8"> 
+<title>盒子模型演示</title>
+<style tpye="txt/css">
+    .simple {
+        width: 500px;
+        margin: 20px auto;
+        border:1px solid;
+      }
+
+    .fancy {
+        width: 500px;
+        margin: 20px auto;
+        padding: 50px;
+        border-width: 10px;
+        border:1px solid;
+    }
+   
+</style>
 </head>
 <body>
-     <div class=div_1>盒子模型</div>
-</body>
-</html> 
 
-<style type="text/css">
-    .div_1 {
-        background:red;
-    }
-</style>
+<h2>盒子模型演示</h2>
+
+<p>在我们讨论宽度的时候，我们应该讲下与它相关的另外一个重点知识：盒模型。
+    当你设置了元素的宽度，实际展现的元素却超出你的设置：这是因为元素的边
+    框和内边距会撑开元素。看下面的例子，两个相同宽度的元素显示的实际宽度却不一样。
+</p>
+
+<div class="simple">1</div>
+<div class="fancy">2</div>
+
+
+
+
+
+</body>
+</html>
+

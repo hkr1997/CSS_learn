@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>CSS垂直居中</title>
+<style tpye="txt/css">
+    .parent_txt {
+        background:green;
+        width:500px;
+        height:200px;
+    }
+    .child_txt {
+        line-height:200px;
+    }
+    .parent_img {
+        position:relative;
+        width: 500px;
+        height:200px;
+        margin: auto auto; 
+        background:green;
+        
+    }
+    img{
+        vertical-align: middle;
+        width: 90px;
+        height:20px;
+        margin: auto auto;    
+        background:green;
+        position:absolute;
+    }
+    .child_img {
+        width: 90px;
+        height:20px;
+        margin: auto auto; 
+        vertical-align: middle;
+    }
+    .parent_div {
+        position:relative;
+        background:green;
+        height:200px;
+    }
+    .child_div {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+        height: 30%;
+        margin: auto;   
+        line-height:60px;
+        background:red;    
+    }
+</style>
+</head>
+<body>
+    <p>单行文本垂直居中</p>
+    <div class="parent_txt">
+        <p class="child_txt">Text here</p>
+    </div>
+
+    <p>图片垂直居中</p>
+    <div class="parent_img">
+        <div class="child_img">Text here</div>
+        <img src="image.png"  alt=""></div>
+    </div>
+
+    <p>块级元素垂直居中</p>
+    <div class="parent_div">
+        <div class="child_div">Text here</div>
+    </div>
+</body>
+</html>
+

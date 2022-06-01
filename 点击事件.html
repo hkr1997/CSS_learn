@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+请输入您的姓名：<input type="text" onfocus="onfocus_Fun(this)" />
+<p onmousedown="mouseDown()" class="p_name">这是一个段落</p>
+<p>当输入字段获得焦点时，会触发一个更改背景颜色的函数。</p>
+
+<script>
+function onfocus_Fun(x) {
+    x.style.background = "yellow";
+}
+function mouseDown() {
+    var x=document.getElementsByName("p_name");
+    x.style.color = "yellow"
+}
+
+</script>
+
+</body>
+</html>
