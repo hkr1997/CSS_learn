@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    //构造函数
+    function fn(){
+        num = 20
+    }
+    //为构造函数添加原型对象
+    fn.prototype.num = 30;
+    //实例化构造函数
+    var obj = new fn();
+    //此时打印出来的obj本身有一个属性num=20，在它的__proto__中有num=30
+    console.log(obj);
+    console.log(obj.__proto__.num == fn.prototype.num)
+    //上面两个num的比较结果是true，这个就说明了实例对象的__proto__是有关联的，并且obj的__proto__shi 指向构造函数的原型对象的，所以两个值是相等的!
+
+</script>
+</html>
